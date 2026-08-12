@@ -360,7 +360,9 @@
         </div>
     </section>
 
-    <!-- ===== FORM PENDAFTARAN ===== -->
+    <!-- ============================================================ -->
+    <!-- ===== FORM PENDAFTARAN (DENGAN NETLIFY FORMS) ===== -->
+    <!-- ============================================================ -->
     <section id="daftar" style="background:var(--light-blue);">
         <div class="container">
             <h2 class="section-title text-center">Yuk, Mulai Perjalanan <span>Belajar Anak</span></h2>
@@ -383,20 +385,30 @@
                 </div>
 
                 <div class="form-wrapper">
-                    <form id="registerForm">
+                    <!-- 
+                        ============================================================
+                        TAMBAHAN NETLIFY FORMS:
+                        1. Atribut netlify pada tag <form>
+                        2. netlify-honeypot="bot-field" untuk anti-spam
+                        3. Input hidden name="form-name" dengan nilai "pendaftaran"
+                        ============================================================
+                    -->
+                    <form id="registerForm" netlify netlify-honeypot="bot-field" name="pendaftaran">
+                        <input type="hidden" name="form-name" value="pendaftaran" />
+
                         <div class="form-group">
                             <label for="namaOrtu">Nama Orang Tua</label>
-                            <input type="text" id="namaOrtu" placeholder="Masukkan nama orang tua" required />
+                            <input type="text" id="namaOrtu" name="namaOrtu" placeholder="Masukkan nama orang tua" required />
                             <div class="error-msg">Wajib diisi</div>
                         </div>
                         <div class="form-group">
                             <label for="namaAnak">Nama Anak</label>
-                            <input type="text" id="namaAnak" placeholder="Masukkan nama anak" required />
+                            <input type="text" id="namaAnak" name="namaAnak" placeholder="Masukkan nama anak" required />
                             <div class="error-msg">Wajib diisi</div>
                         </div>
                         <div class="form-group">
                             <label for="kelas">Kelas Anak</label>
-                            <select id="kelas" required>
+                            <select id="kelas" name="kelas" required>
                                 <option value="">Pilih kelas</option>
                                 <option value="1">Kelas 1 SD</option>
                                 <option value="2">Kelas 2 SD</option>
@@ -409,7 +421,7 @@
                         </div>
                         <div class="form-group">
                             <label for="programPilih">Program Belajar</label>
-                            <select id="programPilih" required>
+                            <select id="programPilih" name="programPilih" required>
                                 <option value="">Pilih program</option>
                                 <option value="Matematika">Matematika</option>
                                 <option value="Bahasa Indonesia">Bahasa Indonesia</option>
@@ -420,12 +432,12 @@
                         </div>
                         <div class="form-group">
                             <label for="whatsapp">Nomor WhatsApp</label>
-                            <input type="tel" id="whatsapp" placeholder="Contoh: 081234567890" required />
+                            <input type="tel" id="whatsapp" name="whatsapp" placeholder="Contoh: 081234567890" required />
                             <div class="error-msg">Masukkan nomor valid (10-15 digit)</div>
                         </div>
                         <div class="form-group">
                             <label for="pesan">Pesan / Kebutuhan Belajar (opsional)</label>
-                            <textarea id="pesan" rows="3" placeholder="Ceritakan kebutuhan belajar anak"></textarea>
+                            <textarea id="pesan" name="pesan" rows="3" placeholder="Ceritakan kebutuhan belajar anak"></textarea>
                         </div>
                         <div class="form-group form-group-checkbox">
                             <input type="checkbox" id="agreement" required />
@@ -553,6 +565,21 @@
             <p>Kelompok 15 — IF210</p>
         </div>
     </footer>
+
+    <!-- ============================================================ -->
+    <!-- ===== LIBRECOUNTER (VISITOR COUNTER) ===== -->
+    <!-- ============================================================ -->
+    <div style="text-align:center; padding:20px 0 30px; font-size:14px; color:#888; background:var(--white); border-top:1px solid #eee;">
+        <a href="https://librecounter.org/referer/show" target="_blank" style="text-decoration:none; color:inherit; display:inline-flex; align-items:center; gap:8px;">
+            <img src="https://librecounter.org/counter.svg" 
+                 referrerpolicy="unsafe-url" 
+                 alt="Pengunjung HaloGuru" 
+                 style="height:24px; width:auto; vertical-align:middle;" />
+            <span>👀 Total Pengunjung</span>
+        </a>
+        <span style="margin:0 8px; color:#ddd;">|</span>
+        <span style="font-size:12px; color:#aaa;">Histori pengunjung tersimpan di LibreCounter</span>
+    </div>
 
     <!-- ===== BACK TO TOP ===== -->
     <button id="backToTop" title="Kembali ke atas">↑</button>
