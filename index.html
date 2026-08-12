@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HaloGuru — Bimbingan Belajar SD</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&family=Open+Sans:wght@400;500;600&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+    <!-- CSS Eksternal -->
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <!-- ===== NAVBAR ===== -->
+    <nav class="navbar">
+        <div class="logo">
+            <a href="#home">
+                <img src="images/logo-haloguru.png" alt="HaloGuru" />
+            </a>
+        </div>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#home">Beranda</a></li>
+            <li><a href="#tentang">Tentang</a></li>
+            <li><a href="#program">Program</a></li>
+            <li><a href="#berita">Berita</a></li>
+            <li><a href="#daftar" class="btn-daftar-nav">Daftar</a></li>
+        </ul>
+        <div style="display:flex; align-items:center;">
+            <button id="themeToggle" aria-label="Toggle dark mode">🌙</button>
+            <button class="menu-toggle" id="menuToggle" aria-label="Menu">☰</button>
+        </div>
+    </nav>
+
+    <!-- ===== HOME / HERO ===== -->
+    <section class="hero" id="home">
+        <div class="container" style="display:flex; flex-wrap:wrap; gap:40px; align-items:center; padding:0;">
+            <div class="hero-text">
+                <h1>Bimbingan Belajar Terbaik <span>untuk Jenjang SD</span></h1>
+                <p><strong>Temani perjalanan belajar anak</strong> bersama HaloGuru. Belajar lebih <em>nyaman</em>, <em>menyenangkan</em>, dan sesuai dengan kebutuhan anak.</p>
+                <a href="#daftar" class="hero-button">Daftar Sekarang →</a>
+            </div>
+            <div class="hero-image">
+                <img src="images/haloguru.png" alt="HaloGuru Banner" />
+            </div>
+        </div>
+    </section>
+    <div class="wave-separator"></div>
+
+    <!-- ===== STATISTIK ===== -->
+    <section class="statistik">
+        <div class="stat-item"><h3 id="countSiswa">500+</h3><p>Siswa Bergabung</p></div>
+        <div class="stat-item"><h3 id="countPengajar">15</h3><p>Pengajar Ahli</p></div>
+        <div class="stat-item"><h3 id="countProgram">4</h3><p>Program Belajar</p></div>
+        <div class="stat-item"><h3 id="countRating">4.9</h3><p>Rating Kepuasan</p></div>
+    </section>
+
+    <!-- ===== TENTANG KAMI ===== -->
+    <section id="tentang">
+        <div class="container about-section">
+            <img src="images/haloguru.png" alt="Anak belajar" />
+            <div>
+                <span class="section-label">TENTANG HALOGURU</span>
+                <h2 class="section-title">Tempat Anak Belajar, <span>Bertumbuh dan Berkembang</span></h2>
+                <p><strong>HaloGuru</strong> merupakan bimbingan belajar yang hadir untuk membantu anak jenjang SD belajar dengan lebih <em>nyaman</em> dan <em>menyenangkan</em>.</p>
+                <p>Kami percaya bahwa setiap anak memiliki kemampuan dan cara belajar yang berbeda. Karena itu, HaloGuru hadir untuk memberikan pendampingan yang sesuai dengan kebutuhan setiap anak.</p>
+                <div class="about-points">
+                    <div class="about-point"><span>✓</span><p>Pendampingan yang nyaman</p></div>
+                    <div class="about-point"><span>✓</span><p>Pembelajaran sesuai kebutuhan anak</p></div>
+                    <div class="about-point"><span>✓</span><p>Lingkungan belajar yang menyenangkan</p></div>
+                </div>
+                <a href="#tentang-lengkap" style="color:var(--primary); font-weight:600;">Kenali lebih lanjut →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== TENTANG LENGKAP (Video, Timeline, Tabel) ===== -->
+    <section id="tentang-lengkap" style="background:var(--light-blue);">
+        <div class="container">
+            <h2 class="section-title text-center">Mengenal Lebih Dekat <span>HaloGuru</span></h2>
+
+            <!-- VIDEO -->
+            <div class="video-wrapper">
+                <video controls autoplay muted loop playsinline>
+                    <source src="videos/video-haloguru.mp4" type="video/mp4" />
+                    Browser Anda tidak mendukung pemutar video.
+                </video>
+            </div>
+
+            <!-- TIMELINE -->
+            <h3 style="margin-top:40px;">Perjalanan HaloGuru</h3>
+            <div style="margin-top:20px;">
+                <div class="timeline-item" style="display:flex; gap:30px; margin-bottom:30px; border-left:3px solid var(--light-blue); padding-left:30px;">
+                    <div style="min-width:80px; font-size:28px; font-weight:700; color:var(--primary);">2020</div>
+                    <div><h4>Berdiri</h4><p>HaloGuru didirikan dengan visi membantu anak SD belajar nyaman.</p></div>
+                </div>
+                <div class="timeline-item" style="display:flex; gap:30px; margin-bottom:30px; border-left:3px solid var(--light-blue); padding-left:30px;">
+                    <div style="min-width:80px; font-size:28px; font-weight:700; color:var(--primary);">2021</div>
+                    <div><h4>Program Pertama</h4><p>Meluncurkan program Matematika dan Bahasa Indonesia.</p></div>
+                </div>
+                <div class="timeline-item" style="display:flex; gap:30px; margin-bottom:30px; border-left:3px solid var(--light-blue); padding-left:30px;">
+                    <div style="min-width:80px; font-size:28px; font-weight:700; color:var(--primary);">2022</div>
+                    <div><h4>Ekspansi</h4><p>Menambahkan program Bahasa Inggris dan Sempoa.</p></div>
+                </div>
+                <div class="timeline-item" style="display:flex; gap:30px; margin-bottom:30px; border-left:3px solid var(--light-blue); padding-left:30px;">
+                    <div style="min-width:80px; font-size:28px; font-weight:700; color:var(--primary);">2026</div>
+                    <div><h4>Hari Ini</h4><p>Terus berkembang dengan komitmen menemani belajar anak.</p></div>
+                </div>
+            </div>
+
+            <!-- TABEL PENGAJAR -->
+            <h3 style="margin-top:40px;">Tim Pengajar</h3>
+            <div class="table-wrap">
+                <table>
+                    <thead>
+                        <tr><th>Nama</th><th>Mengajar</th><th>Pengalaman</th><th>Alma Mater</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td><strong>Ibu Siti</strong></td><td>Matematika</td><td>8 tahun</td><td>Universitas Indonesia</td></tr>
+                        <tr><td><strong>Bapak Budi</strong></td><td>Bahasa Indonesia</td><td>6 tahun</td><td>UGM</td></tr>
+                        <tr><td><strong>Ibu Rina</strong></td><td>Bahasa Inggris</td><td>5 tahun</td><td>UPI</td></tr>
+                        <tr><td><strong>Bapak Andi</strong></td><td>Sempoa</td><td>4 tahun</td><td>UNESA</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== KEUNGGULAN ===== -->
+    <section class="advantages" id="keunggulan">
+        <div class="container">
+            <h2 class="section-title text-center">Mengapa Memilih <span>HaloGuru</span></h2>
+            <p class="text-center" style="max-width:700px; margin:0 auto 30px;">HaloGuru hadir untuk membantu anak belajar dengan lebih nyaman, terarah, dan menyenangkan. Kami mendampingi anak agar lebih percaya diri dalam memahami pelajaran dan mengembangkan potensinya.</p>
+            <div class="advantages-grid">
+                <div class="advantage-card">
+                    <div class="icon">👩‍🏫</div>
+                    <h3>Pendampingan Personal</h3>
+                    <p>Setiap anak memiliki kemampuan dan cara belajar yang berbeda. HaloGuru memberikan pendampingan yang memperhatikan kebutuhan belajar setiap anak.</p>
+                </div>
+                <div class="advantage-card">
+                    <div class="icon">📚</div>
+                    <h3>Belajar Lebih Mudah</h3>
+                    <p>Materi disampaikan dengan cara yang sederhana dan mudah dipahami sehingga anak dapat mengikuti pembelajaran dengan lebih nyaman.</p>
+                </div>
+                <div class="advantage-card">
+                    <div class="icon">⭐</div>
+                    <h3>Tumbuh Percaya Diri</h3>
+                    <p>Tidak hanya membantu memahami pelajaran, HaloGuru juga mendorong anak menjadi lebih percaya diri, aktif, dan mandiri dalam belajar.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== PROGRAM ===== -->
+    <section id="program">
+        <div class="container">
+            <h2 class="section-title text-center">Belajar Sesuai <span>Kebutuhan Anak</span></h2>
+            <p class="text-center" style="max-width:600px; margin:0 auto 30px;">Pilih program belajar yang sesuai dengan kebutuhan dan kemampuan anak</p>
+
+            <div class="program-tabs">
+                <button class="program-tab active" data-prog="matematika">Matematika</button>
+                <button class="program-tab" data-prog="indonesia">Bahasa Indonesia</button>
+                <button class="program-tab" data-prog="inggris">Bahasa Inggris</button>
+                <button class="program-tab" data-prog="sempoa">Sempoa</button>
+            </div>
+
+            <div class="program-content">
+                <!-- Matematika -->
+                <div class="program-item active" id="prog-matematika">
+                    <img src="images/matematika.png" alt="Matematika" />
+                    <div>
+                        <h3>Matematika</h3>
+                        <p>Membantu anak memahami konsep matematika dengan cara yang sederhana, menyenangkan, dan mudah dipahami.</p>
+                        <ul>
+                            <li>Memahami konsep dasar matematika</li>
+                            <li>Latihan soal secara bertahap</li>
+                            <li>Pendampingan sesuai kemampuan anak</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Indonesia -->
+                <div class="program-item" id="prog-indonesia">
+                    <img src="images/indonesia.png" alt="Bahasa Indonesia" />
+                    <div>
+                        <h3>Bahasa Indonesia</h3>
+                        <p>Membantu anak meningkatkan kemampuan membaca, memahami bacaan, menulis, dan berkomunikasi dengan baik.</p>
+                        <ul>
+                            <li>Meningkatkan kemampuan membaca</li>
+                            <li>Memahami isi bacaan</li>
+                            <li>Melatih kemampuan menulis</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Inggris -->
+                <div class="program-item" id="prog-inggris">
+                    <img src="images/haloguru.png" alt="Bahasa Inggris" />
+                    <div>
+                        <h3>Bahasa Inggris</h3>
+                        <p>Mengenalkan Bahasa Inggris kepada anak melalui pembelajaran yang ringan, interaktif, dan menyenangkan.</p>
+                        <ul>
+                            <li>Kosakata Bahasa Inggris</li>
+                            <li>Percakapan sederhana</li>
+                            <li>Latihan membaca dan memahami kalimat</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Sempoa -->
+                <div class="program-item" id="prog-sempoa">
+                    <img src="images/sempoa.png" alt="Sempoa" />
+                    <div>
+                        <h3>Sempoa</h3>
+                        <p>Melatih kemampuan berhitung anak melalui metode sempoa yang menyenangkan sekaligus membantu meningkatkan konsentrasi.</p>
+                        <ul>
+                            <li>Melatih kemampuan berhitung</li>
+                            <li>Meningkatkan konsentrasi</li>
+                            <li>Melatih kecepatan dan ketelitian</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== TABEL PERBANDINGAN ===== -->
+    <section style="background:var(--light-blue);">
+        <div class="container">
+            <h2 class="section-title text-center">Perbandingan Program <span>📊</span></h2>
+            <div class="table-wrap">
+                <table>
+                    <thead>
+                        <tr><th>Fitur</th><th>Matematika</th><th>Bahasa Indonesia</th><th>Bahasa Inggris</th><th>Sempoa</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td><strong>Durasi / minggu</strong></td><td>2x60m</td><td>2x60m</td><td>2x60m</td><td>1x60m</td></tr>
+                        <tr><td><strong>Materi dasar</strong></td><td class="check">✓</td><td class="check">✓</td><td class="check">✓</td><td class="check">✓</td></tr>
+                        <tr><td><strong>Latihan soal</strong></td><td class="check">✓</td><td class="check">✓</td><td class="check">✓</td><td class="check">✓</td></tr>
+                        <tr><td><strong>Konsultasi orang tua</strong></td><td class="check">✓</td><td class="check">✓</td><td class="check">✓</td><td>—</td></tr>
+                        <tr><td><strong>Harga / bulan</strong></td><td>Rp350K</td><td>Rp300K</td><td>Rp350K</td><td>Rp250K</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <p style="margin-top:15px; text-align:center; color:#777; font-size:14px;">* Harga sewaktu-waktu dapat berubah. Hubungi kami untuk informasi promo.</p>
+        </div>
+    </section>
+
+    <!-- ===== BERITA ===== -->
+    <section id="berita">
+        <div class="container">
+            <h2 class="section-title text-center">Berita & Informasi <span>📰</span></h2>
+
+            <div class="news-toolbar">
+                <input type="text" id="searchNews" placeholder="Cari berita..." />
+                <select id="filterCategory">
+                    <option value="all">Semua Kategori</option>
+                    <option value="Tips Belajar">Tips Belajar</option>
+                    <option value="Pembelajaran">Pembelajaran</option>
+                    <option value="Perkembangan Anak">Perkembangan Anak</option>
+                    <option value="Program Belajar">Program Belajar</option>
+                    <option value="HaloGuru">HaloGuru</option>
+                </select>
+                <button onclick="applyFilter()">Cari</button>
+                <button onclick="resetFilter()">Reset</button>
+            </div>
+
+            <div class="news-grid" id="newsGrid">
+                <!-- Berita 1 -->
+                <div class="news-card" data-category="Tips Belajar">
+                    <img src="images/berita-belajar.png" alt="Belajar" />
+                    <div class="news-content">
+                        <span class="category">Tips Belajar</span>
+                        <h3>Tips Membuat Anak Semangat Belajar di Rumah</h3>
+                        <p>Cara sederhana menciptakan suasana belajar yang nyaman bagi anak.</p>
+                        <div class="news-audio" onclick="speakText(this)">🔊 Dengarkan ringkasan</div>
+                    </div>
+                </div>
+                <!-- Berita 2 -->
+                <div class="news-card" data-category="Pembelajaran">
+                    <img src="images/berita-matematika.png" alt="Matematika" />
+                    <div class="news-content">
+                        <span class="category">Pembelajaran</span>
+                        <h3>Cara Menyenangkan Belajar Matematika</h3>
+                        <p>Pendekatan sederhana dengan kehidupan sehari-hari.</p>
+                        <div class="news-audio" onclick="speakText(this)">🔊 Dengarkan ringkasan</div>
+                    </div>
+                </div>
+                <!-- Berita 3 -->
+                <div class="news-card" data-category="Perkembangan Anak">
+                    <img src="images/berita-membaca.png" alt="Percaya diri" />
+                    <div class="news-content">
+                        <span class="category">Perkembangan Anak</span>
+                        <h3>Membangun Kepercayaan Diri Anak dalam Belajar</h3>
+                        <p>Dukungan orang tua membantu anak lebih percaya diri.</p>
+                        <div class="news-audio" onclick="speakText(this)">🔊 Dengarkan ringkasan</div>
+                    </div>
+                </div>
+                <!-- Berita 4 -->
+                <div class="news-card" data-category="Program Belajar">
+                    <img src="images/sempoa.png" alt="Sempoa" />
+                    <div class="news-content">
+                        <span class="category">Program Belajar</span>
+                        <h3>Manfaat Belajar Sempoa untuk Anak</h3>
+                        <p>Melatih konsentrasi dan ketelitian sejak dini.</p>
+                        <div class="news-audio" onclick="speakText(this)">🔊 Dengarkan ringkasan</div>
+                    </div>
+                </div>
+                <!-- Berita 5 -->
+                <div class="news-card" data-category="Tips Belajar">
+                    <img src="images/berita-membaca.png" alt="Membaca" />
+                    <div class="news-content">
+                        <span class="category">Tips Belajar</span>
+                        <h3>Membiasakan Anak Membaca Sejak Dini</h3>
+                        <p>Kebiasaan membaca memperluas pengetahuan.</p>
+                        <div class="news-audio" onclick="speakText(this)">🔊 Dengarkan ringkasan</div>
+                    </div>
+                </div>
+                <!-- Berita 6 -->
+                <div class="news-card" data-category="HaloGuru">
+                    <img src="images/haloguru.png" alt="HaloGuru" />
+                    <div class="news-content">
+                        <span class="category">HaloGuru</span>
+                        <h3>HaloGuru, Teman Belajar untuk Tumbuh</h3>
+                        <p>Komitmen menemani perjalanan belajar anak SD.</p>
+                        <div class="news-audio" onclick="speakText(this)">🔊 Dengarkan ringkasan</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pagination" id="pagination"></div>
+        </div>
+    </section>
+
+    <!-- ===== TESTIMONI ===== -->
+    <section class="testimoni-section">
+        <div class="container">
+            <h2 class="section-title text-center">Apa Kata Mereka <span>💬</span></h2>
+            <div class="testimoni-slider">
+                <div class="testimoni-item">
+                    <p>"Anak saya jadi lebih percaya diri dan senang belajar matematika setelah ikut HaloGuru."</p>
+                    <div class="nama">Ibu Rina</div>
+                    <div class="role">Orang tua siswa kelas 4</div>
+                </div>
+                <div class="testimoni-item">
+                    <p>"Metode belajarnya menyenangkan, tidak membuat anak stres. Nilai anak saya meningkat drastis!"</p>
+                    <div class="nama">Bapak Andi</div>
+                    <div class="role">Orang tua siswa kelas 2</div>
+                </div>
+                <div class="testimoni-item">
+                    <p>"Saya suka belajar sempoa di sini, gurunya sabar dan selalu memberi semangat."</p>
+                    <div class="nama">Naura</div>
+                    <div class="role">Siswa kelas 5</div>
+                </div>
+                <div class="testimoni-item">
+                    <p>"Lingkungan belajarnya nyaman, anak saya tidak pernah malas datang ke HaloGuru."</p>
+                    <div class="nama">Ibu Dini</div>
+                    <div class="role">Orang tua siswa kelas 3</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FORM PENDAFTARAN ===== -->
+    <section id="daftar" style="background:var(--light-blue);">
+        <div class="container">
+            <h2 class="section-title text-center">Yuk, Mulai Perjalanan <span>Belajar Anak</span></h2>
+            <div class="register-grid">
+                <div class="register-info">
+                    <h3>Siap Bergabung?</h3>
+                    <p>Lengkapi data berikut agar tim HaloGuru dapat menghubungi Anda dan memberikan informasi mengenai program belajar yang sesuai.</p>
+                    <ul>
+                        <li>Pendampingan sesuai kebutuhan anak</li>
+                        <li>Pilihan program belajar yang beragam</li>
+                        <li>Lingkungan belajar yang nyaman</li>
+                    </ul>
+                    <!-- Audio sebagai contoh -->
+                    <div style="margin-top:20px;">
+                        <audio controls style="width:100%; max-width:260px;">
+                            <source src="audio/haloguru.mp3" type="audio/mpeg" />
+                            Browser Anda tidak mendukung audio.
+                        </audio>
+                    </div>
+                </div>
+
+                <div class="form-wrapper">
+                    <form id="registerForm">
+                        <div class="form-group">
+                            <label for="namaOrtu">Nama Orang Tua</label>
+                            <input type="text" id="namaOrtu" placeholder="Masukkan nama orang tua" required />
+                            <div class="error-msg">Wajib diisi</div>
+                        </div>
+                        <div class="form-group">
+                            <label for="namaAnak">Nama Anak</label>
+                            <input type="text" id="namaAnak" placeholder="Masukkan nama anak" required />
+                            <div class="error-msg">Wajib diisi</div>
+                        </div>
+                        <div class="form-group">
+                            <label for="kelas">Kelas Anak</label>
+                            <select id="kelas" required>
+                                <option value="">Pilih kelas</option>
+                                <option value="1">Kelas 1 SD</option>
+                                <option value="2">Kelas 2 SD</option>
+                                <option value="3">Kelas 3 SD</option>
+                                <option value="4">Kelas 4 SD</option>
+                                <option value="5">Kelas 5 SD</option>
+                                <option value="6">Kelas 6 SD</option>
+                            </select>
+                            <div class="error-msg">Pilih kelas</div>
+                        </div>
+                        <div class="form-group">
+                            <label for="programPilih">Program Belajar</label>
+                            <select id="programPilih" required>
+                                <option value="">Pilih program</option>
+                                <option value="Matematika">Matematika</option>
+                                <option value="Bahasa Indonesia">Bahasa Indonesia</option>
+                                <option value="Bahasa Inggris">Bahasa Inggris</option>
+                                <option value="Sempoa">Sempoa</option>
+                            </select>
+                            <div class="error-msg">Pilih program</div>
+                        </div>
+                        <div class="form-group">
+                            <label for="whatsapp">Nomor WhatsApp</label>
+                            <input type="tel" id="whatsapp" placeholder="Contoh: 081234567890" required />
+                            <div class="error-msg">Masukkan nomor valid (10-15 digit)</div>
+                        </div>
+                        <div class="form-group">
+                            <label for="pesan">Pesan / Kebutuhan Belajar (opsional)</label>
+                            <textarea id="pesan" rows="3" placeholder="Ceritakan kebutuhan belajar anak"></textarea>
+                        </div>
+                        <div class="form-group form-group-checkbox">
+                            <input type="checkbox" id="agreement" required />
+                            <label for="agreement">Saya menyetujui bahwa data yang saya berikan benar dan akan digunakan untuk keperluan pendaftaran di HaloGuru. <span style="color:var(--primary);font-weight:600;">(wajib)</span></label>
+                        </div>
+                        <button type="button" class="register-button" onclick="previewData()" style="background:var(--secondary);">👁️ Pratinjau Data</button>
+                        <button type="submit" class="register-button">Kirim Pendaftaran →</button>
+                    </form>
+
+                    <div id="previewData">
+                        <h4>📋 Data yang Anda Masukkan</h4>
+                        <table>
+                            <tr><td>Nama Orang Tua</td><td id="prevNamaOrtu">-</td></tr>
+                            <tr><td>Nama Anak</td><td id="prevNamaAnak">-</td></tr>
+                            <tr><td>Kelas</td><td id="prevKelas">-</td></tr>
+                            <tr><td>Program</td><td id="prevProgram">-</td></tr>
+                            <tr><td>WhatsApp</td><td id="prevWA">-</td></tr>
+                            <tr><td>Pesan</td><td id="prevPesan">-</td></tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FAQ ===== -->
+    <section id="faq">
+        <div class="container">
+            <h2 class="section-title text-center">Pertanyaan yang Sering Diajukan <span>❓</span></h2>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        Apa saja program yang tersedia di HaloGuru?
+                        <span class="arrow">▼</span>
+                    </div>
+                    <div class="faq-answer"><p>HaloGuru menyediakan empat program belajar, yaitu <strong>Matematika</strong>, <strong>Bahasa Indonesia</strong>, <strong>Bahasa Inggris</strong>, dan <strong>Sempoa</strong>. Setiap program dirancang sesuai dengan jenjang SD.</p></div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        Bagaimana cara mendaftar?
+                        <span class="arrow">▼</span>
+                    </div>
+                    <div class="faq-answer"><p>Anda dapat mendaftar melalui <a href="#daftar" style="color:var(--primary);font-weight:600;">formulir pendaftaran</a> di website ini. Tim HaloGuru akan segera menghubungi Anda untuk informasi lebih lanjut.</p></div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        Apakah ada kelas percobaan?
+                        <span class="arrow">▼</span>
+                    </div>
+                    <div class="faq-answer"><p>Ya, HaloGuru menyediakan <strong>kelas percobaan gratis</strong> untuk setiap program. Anda dapat menghubungi kami untuk menjadwalkan sesi percobaan.</p></div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        Berapa biaya pendaftaran?
+                        <span class="arrow">▼</span>
+                    </div>
+                    <div class="faq-answer"><p>Biaya pendaftaran bervariasi tergantung program yang dipilih. Silakan lihat tabel perbandingan untuk informasi harga. Hubungi kami untuk promo terbaru.</p></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== NEWSLETTER ===== -->
+    <section style="background:var(--light-blue);">
+        <div class="container text-center">
+            <h2 class="section-title">Dapatkan Info Terbaru <span>📬</span></h2>
+            <p style="max-width:500px; margin:0 auto 10px;">Berlangganan newsletter kami untuk mendapatkan tips belajar dan informasi program terbaru.</p>
+            <form class="newsletter-form" onsubmit="event.preventDefault(); alert('✅ Terima kasih telah berlangganan!');">
+                <input type="email" placeholder="Masukkan email Anda" required />
+                <button type="submit">Berlangganan</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- ===== CTA ===== -->
+    <section class="cta-section" style="margin: 0 5% 50px; width:auto;">
+        <div>
+            <h2 style="font-size:30px;">Siap Temani <span style="color:var(--primary);">Belajar Anak?</span></h2>
+            <p>Dapatkan informasi program dan pendampingan yang sesuai.</p>
+        </div>
+        <a href="#daftar" class="cta-button">Daftar Sekarang →</a>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <a href="#home" class="footer-logo"><img src="images/logo-haloguru.png" alt="HaloGuru" /></a>
+                <p>Bimbingan belajar untuk membantu anak belajar dengan lebih nyaman, menyenangkan, dan percaya diri.</p>
+            </div>
+            <div class="footer-column">
+                <h3>Navigasi</h3>
+                <ul>
+                    <li><a href="#home">Beranda</a></li>
+                    <li><a href="#tentang">Tentang Kami</a></li>
+                    <li><a href="#program">Program</a></li>
+                    <li><a href="#berita">Berita</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Program</h3>
+                <ul>
+                    <li><a href="#program">Matematika</a></li>
+                    <li><a href="#program">Bahasa Indonesia</a></li>
+                    <li><a href="#program">Bahasa Inggris</a></li>
+                    <li><a href="#program">Sempoa</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Hubungi Kami</h3>
+                <ul>
+                    <li>WhatsApp</li>
+                    <li>Email</li>
+                    <li>Alamat</li>
+                </ul>
+                <div class="footer-music">
+                    <audio controls loop>
+                        <source src="audio/haloguru.mp3" type="audio/mpeg" />
+                    </audio>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 HaloGuru. All Rights Reserved.</p>
+            <p>Kelompok 15 — IF210</p>
+        </div>
+    </footer>
+
+    <!-- ===== BACK TO TOP ===== -->
+    <button id="backToTop" title="Kembali ke atas">↑</button>
+
+    <!-- JavaScript Eksternal -->
+    <script src="script.js"></script>
+</body>
+</html>
